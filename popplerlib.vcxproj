@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F78B1C7E-135A-4178-BED4-A4CCCA9389D6}</ProjectGuid>
+    <RootNamespace>sumatrapdf</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)baseutils;$(ProjectDir)src;$(ProjectDir).\poppler;$(ProjectDir).\poppler\goo;$(ProjectDir)ext\jpeg;$(ProjectDir)ext\zlib;$(ProjectDir)ext\freetype231\include;$(ProjectDir).\poppler\poppler;$(ProjectDir).\poppler\splash;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;WIN32;_WINDOWS;_DEBUG;DEBUG;USE_OWN_GET_AUTH_DATA;POPPLER_DATADIR="";ENABLE_ZLIB=1;ENABLE_LIBJPEG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName)_d.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;4244;4267;4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+      <UseFullPaths>true</UseFullPaths>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_d.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir).\baseutils;$(ProjectDir).\src;$(ProjectDir).\poppler;$(ProjectDir).\poppler\goo;$(ProjectDir)ext\jpeg;$(ProjectDir)ext\zlib;$(ProjectDir)ext\freetype231\include;$(ProjectDir).\poppler\poppler;$(ProjectDir).\poppler\splash;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_WINDOWS;USE_OWN_GET_AUTH_DATA;POPPLER_DATADIR="";ENABLE_ZLIB=1;ENABLE_LIBJPEG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;4244;4267;4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <UseFullPaths>true</UseFullPaths>
+    </ClCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="poppler\poppler\Annot.cc">
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</WholeProgramOptimization>
+    </ClCompile>
+    <ClCompile Include="poppler\poppler\Array.cc" />
+    <ClCompile Include="poppler\poppler\BuiltinFont.cc" />
+    <ClCompile Include="poppler\poppler\BuiltinFontTables.cc" />
+    <ClCompile Include="poppler\poppler\Catalog.cc" />
+    <ClCompile Include="poppler\poppler\CharCodeToUnicode.cc" />
+    <ClCompile Include="poppler\poppler\CMap.cc" />
+    <ClCompile Include="poppler\poppler\DCTStream.cc" />
+    <ClCompile Include="poppler\poppler\Decrypt.cc" />
+    <ClCompile Include="poppler\poppler\Dict.cc" />
+    <ClCompile Include="poppler\goo\FastAlloc.cc" />
+    <ClCompile Include="poppler\goo\FastFixedAllocator.cc" />
+    <ClCompile Include="poppler\goo\FixedPoint.cc" />
+    <ClCompile Include="poppler\poppler\FlateStream.cc" />
+    <ClCompile Include="poppler\fofi\FoFiBase.cc" />
+    <ClCompile Include="poppler\fofi\FoFiEncodings.cc" />
+    <ClCompile Include="poppler\fofi\FoFiTrueType.cc" />
+    <ClCompile Include="poppler\fofi\FoFiType1.cc" />
+    <ClCompile Include="poppler\fofi\FoFiType1C.cc" />
+    <ClCompile Include="poppler\poppler\FontEncodingTables.cc" />
+    <ClCompile Include="poppler\poppler\Function.cc" />
+    <ClCompile Include="poppler\goo\gfile.cc" />
+    <ClCompile Include="poppler\poppler\Gfx.cc" />
+    <ClCompile Include="poppler\poppler\GfxFont.cc" />
+    <ClCompile Include="poppler\poppler\GfxState.cc" />
+    <ClCompile Include="poppler\poppler\GlobalParams.cc" />
+    <ClCompile Include="poppler\poppler\GlobalParamsWin.cc" />
+    <ClCompile Include="poppler\goo\gmem.c" />
+    <ClCompile Include="poppler\goo\gmempp.cc" />
+    <ClCompile Include="poppler\goo\GooHash.cc" />
+    <ClCompile Include="poppler\goo\GooList.cc" />
+    <ClCompile Include="poppler\goo\GooString.cc" />
+    <ClCompile Include="poppler\goo\GooTimer.cc" />
+    <ClCompile Include="poppler\poppler\JArithmeticDecoder.cc" />
+    <ClCompile Include="poppler\poppler\JBIG2Stream.cc" />
+    <ClCompile Include="poppler\poppler\JPXStream.cc" />
+    <ClCompile Include="poppler\poppler\Lexer.cc" />
+    <ClCompile Include="poppler\poppler\Link.cc" />
+    <ClCompile Include="poppler\poppler\NameToCharCode.cc" />
+    <ClCompile Include="poppler\poppler\Object.cc" />
+    <ClCompile Include="poppler\poppler\Outline.cc" />
+    <ClCompile Include="poppler\poppler\OutputDev.cc" />
+    <ClCompile Include="poppler\poppler\Page.cc" />
+    <ClCompile Include="poppler\poppler\PageLabelInfo.cc" />
+    <ClCompile Include="poppler\poppler\Parser.cc" />
+    <ClCompile Include="poppler\poppler\PDFDoc.cc" />
+    <ClCompile Include="poppler\poppler\PDFDocEncoding.cc" />
+    <ClCompile Include="poppler\poppler\PSTokenizer.cc" />
+    <ClCompile Include="poppler\poppler\SecurityHandler.cc" />
+    <ClCompile Include="poppler\poppler\Sound.cc" />
+    <ClCompile Include="poppler\splash\Splash.cc" />
+    <ClCompile Include="poppler\splash\SplashBitmap.cc" />
+    <ClCompile Include="poppler\splash\SplashClip.cc" />
+    <ClCompile Include="poppler\splash\SplashFont.cc" />
+    <ClCompile Include="poppler\splash\SplashFontEngine.cc" />
+    <ClCompile Include="poppler\splash\SplashFontFile.cc" />
+    <ClCompile Include="poppler\splash\SplashFontFileID.cc" />
+    <ClCompile Include="poppler\splash\SplashFTFont.cc" />
+    <ClCompile Include="poppler\splash\SplashFTFontEngine.cc" />
+    <ClCompile Include="poppler\splash\SplashFTFontFile.cc" />
+    <ClCompile Include="poppler\poppler\SplashOutputDev.cc" />
+    <ClCompile Include="poppler\splash\SplashPath.cc" />
+    <ClCompile Include="poppler\splash\SplashPattern.cc" />
+    <ClCompile Include="poppler\splash\SplashScreen.cc" />
+    <ClCompile Include="poppler\splash\SplashState.cc" />
+    <ClCompile Include="poppler\splash\SplashXPath.cc" />
+    <ClCompile Include="poppler\splash\SplashXPathScanner.cc" />
+    <ClCompile Include="poppler\poppler\Stream.cc" />
+    <ClCompile Include="poppler\poppler\TextOutputDev.cc" />
+    <ClCompile Include="poppler\poppler\UGooString.cc" />
+    <ClCompile Include="poppler\poppler\UnicodeMap.cc" />
+    <ClCompile Include="poppler\poppler\UnicodeTypeTable.cc" />
+    <ClCompile Include="poppler\poppler\XpdfPluginAPI.cc" />
+    <ClCompile Include="poppler\poppler\XRef.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="poppler\poppler\Annot.h" />
+    <ClInclude Include="poppler\poppler\Array.h" />
+    <ClInclude Include="poppler\poppler\BuiltinFont.h" />
+    <ClInclude Include="poppler\poppler\BuiltinFontTables.h" />
+    <ClInclude Include="poppler\poppler\Catalog.h" />
+    <ClInclude Include="poppler\poppler\CharCodeToUnicode.h" />
+    <ClInclude Include="poppler\poppler\CharTypes.h" />
+    <ClInclude Include="poppler\poppler\CMap.h" />
+    <ClInclude Include="poppler\poppler\CompactFontTables.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="poppler\poppler\DCTStream.h" />
+    <ClInclude Include="poppler\poppler\Decrypt.h" />
+    <ClInclude Include="poppler\poppler\Dict.h" />
+    <ClInclude Include="poppler\poppler\Error.h" />
+    <ClInclude Include="poppler\poppler\ErrorCodes.h" />
+    <ClInclude Include="poppler\goo\FastAlloc.h" />
+    <ClInclude Include="poppler\goo\FastFixedAllocator.h" />
+    <ClInclude Include="poppler\goo\FixedPoint.h" />
+    <ClInclude Include="poppler\fofi\FoFiBase.h" />
+    <ClInclude Include="poppler\fofi\FoFiEncodings.h" />
+    <ClInclude Include="poppler\fofi\FoFiTrueType.h" />
+    <ClInclude Include="poppler\fofi\FoFiType1.h" />
+    <ClInclude Include="poppler\fofi\FoFiType1C.h" />
+    <ClInclude Include="poppler\poppler\FontEncodingTables.h" />
+    <ClInclude Include="poppler\poppler\Function.h" />
+    <ClInclude Include="poppler\goo\gfile.h" />
+    <ClInclude Include="poppler\poppler\Gfx.h" />
+    <ClInclude Include="poppler\poppler\GfxFont.h" />
+    <ClInclude Include="poppler\poppler\GfxState.h" />
+    <ClInclude Include="poppler\poppler\GlobalParams.h" />
+    <ClInclude Include="poppler\goo\gmem.h" />
+    <ClInclude Include="poppler\goo\GooHash.h" />
+    <ClInclude Include="poppler\goo\GooList.h" />
+    <ClInclude Include="poppler\goo\GooMutex.h" />
+    <ClInclude Include="poppler\goo\GooString.h" />
+    <ClInclude Include="poppler\goo\GooTimer.h" />
+    <ClInclude Include="poppler\goo\GooVector.h" />
+    <ClInclude Include="poppler\goo\gtypes.h" />
+    <ClInclude Include="poppler\poppler\JArithmeticDecoder.h" />
+    <ClInclude Include="poppler\poppler\JBIG2Stream.h" />
+    <ClInclude Include="poppler\poppler\JPXStream.h" />
+    <ClInclude Include="poppler\poppler\Lexer.h" />
+    <ClInclude Include="poppler\poppler\Link.h" />
+    <ClInclude Include="poppler\poppler\NameToCharCode.h" />
+    <ClInclude Include="poppler\poppler\NameToUnicodeTable.h" />
+    <ClInclude Include="poppler\poppler\Object.h" />
+    <ClInclude Include="poppler\poppler\Outline.h" />
+    <ClInclude Include="poppler\poppler\OutputDev.h" />
+    <ClInclude Include="poppler\poppler\Page.h" />
+    <ClInclude Include="poppler\poppler\PageLabelInfo.h" />
+    <ClInclude Include="poppler\poppler\Parser.h" />
+    <ClInclude Include="poppler\poppler\PDFDoc.h" />
+    <ClInclude Include="poppler\poppler\PDFDocEncoding.h" />
+    <ClInclude Include="src\poppler-config.h" />
+    <ClInclude Include="poppler\poppler\PSTokenizer.h" />
+    <ClInclude Include="src\Resource.h" />
+    <ClInclude Include="poppler\poppler\SecurityHandler.h" />
+    <ClInclude Include="poppler\poppler\Sound.h" />
+    <ClInclude Include="poppler\splash\Splash.h" />
+    <ClInclude Include="poppler\splash\SplashBitmap.h" />
+    <ClInclude Include="poppler\splash\SplashClip.h" />
+    <ClInclude Include="poppler\splash\SplashErrorCodes.h" />
+    <ClInclude Include="poppler\splash\SplashFont.h" />
+    <ClInclude Include="poppler\splash\SplashFontEngine.h" />
+    <ClInclude Include="poppler\splash\SplashFontFile.h" />
+    <ClInclude Include="poppler\splash\SplashFontFileID.h" />
+    <ClInclude Include="poppler\splash\SplashFTFont.h" />
+    <ClInclude Include="poppler\splash\SplashFTFontEngine.h" />
+    <ClInclude Include="poppler\splash\SplashFTFontFile.h" />
+    <ClInclude Include="poppler\splash\SplashGlyphBitmap.h" />
+    <ClInclude Include="poppler\splash\SplashMath.h" />
+    <ClInclude Include="poppler\poppler\SplashOutputDev.h" />
+    <ClInclude Include="poppler\splash\SplashPath.h" />
+    <ClInclude Include="poppler\splash\SplashPattern.h" />
+    <ClInclude Include="poppler\splash\SplashScreen.h" />
+    <ClInclude Include="poppler\splash\SplashState.h" />
+    <ClInclude Include="poppler\splash\SplashTypes.h" />
+    <ClInclude Include="poppler\splash\SplashXPath.h" />
+    <ClInclude Include="poppler\splash\SplashXPathScanner.h" />
+    <ClInclude Include="poppler\poppler\Stream-CCITT.h" />
+    <ClInclude Include="poppler\poppler\Stream.h" />
+    <ClInclude Include="poppler\poppler\TextOutputDev.h" />
+    <ClInclude Include="poppler\poppler\UGooString.h" />
+    <ClInclude Include="poppler\poppler\UnicodeCClassTables.h" />
+    <ClInclude Include="poppler\poppler\UnicodeCompTables.h" />
+    <ClInclude Include="poppler\poppler\UnicodeDecompTables.h" />
+    <ClInclude Include="poppler\poppler\UnicodeMap.h" />
+    <ClInclude Include="poppler\poppler\UnicodeMapTables.h" />
+    <ClInclude Include="poppler\poppler\UnicodeTypeTable.h" />
+    <ClInclude Include="poppler\poppler\UTF8.h" />
+    <ClInclude Include="poppler\poppler\XpdfPluginAPI.h" />
+    <ClInclude Include="poppler\poppler\XRef.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,18 @@
+NULL =
+TEST_FILE_UTIL_SRCS = \
+    base_util.c \
+    str_util.c \
+    file_util.c \
+    test_file_util.cpp \
+    $(NULL)
+
+TEST_FILE_UTIL_INCS = \
+    base_util.h \
+    str_util.h \
+    file_util.h \
+    $(NULL)
+
+test_file_util_d.exe: $(TEST_FILE_UTIL_SRCS) $(TEST_FILE_UTIL_INCS)
+    cl /nologo /Fetest_file_util_d.exe /Od /Zi /Fdtest_file_util_d.pdb $(TEST_FILE_UTIL_SRCS) /MTd
+
+all: test_file_util_d.exe

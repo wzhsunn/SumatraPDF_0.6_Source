@@ -1,0 +1,265 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SUMATRAPDF          ICON                    "SumatraPDF.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_SUMATRAPDF MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open\tCtrl-O",               IDM_OPEN
+        MENUITEM "&Close\tCtrl-W",              IDM_CLOSE
+        MENUITEM "&Print",                      IDM_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Make SumatraPDf a default PDF reader", IDM_MAKE_DEFAULT_READER
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl-Q",               IDM_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Single page",                 IDM_VIEW_SINGLE_PAGE
+        MENUITEM "Facing",                      IDM_VIEW_FACING
+        MENUITEM "Continuous",                  IDM_VIEW_CONTINUOUS
+        MENUITEM "Continuous facing",           IDM_VIEW_CONTINUOUS_FACING
+        MENUITEM SEPARATOR
+        MENUITEM "Rotate left",                 IDM_VIEW_ROTATE_LEFT
+        MENUITEM "Rotate right",                IDM_VIEW_ROTATE_RIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "Show toolbar",                IDM_VIEW_SHOW_HIDE_TOOLBAR
+        MENUITEM SEPARATOR
+        MENUITEM "Use MuPDF rendering engine",  IDM_VIEW_USE_FITZ
+    END
+    POPUP "&Go To"
+    BEGIN
+        MENUITEM "Next Page",                   IDM_GOTO_NEXT_PAGE
+        MENUITEM "Previous Page",               IDM_GOTO_PREV_PAGE
+        MENUITEM "First Page\tHome",            IDM_GOTO_FIRST_PAGE
+        MENUITEM "Last Page\tEnd",              IDM_GOTO_LAST_PAGE
+        MENUITEM "Page...",                     IDM_GOTO_PAGE
+    END
+    POPUP "&Zoom"
+    BEGIN
+        MENUITEM "Fit &Page\tCtrl-0",           IDM_ZOOM_FIT_PAGE
+        MENUITEM "Act&ual Size\tCtrl-1",        IDM_ZOOM_ACTUAL_SIZE
+        MENUITEM "Fit Widt&h\tCtrl-2",          IDM_ZOOM_FIT_WIDTH
+        MENUITEM SEPARATOR
+        MENUITEM "6400%",                       IDM_ZOOM_6400
+        MENUITEM "3200%",                       IDM_ZOOM_3200
+        MENUITEM "1600%",                       IDM_ZOOM_1600
+        MENUITEM "800%",                        IDM_ZOOM_800
+        MENUITEM "400%",                        IDM_ZOOM_400
+        MENUITEM "200%",                        IDM_ZOOM_200
+        MENUITEM "150%",                        IDM_ZOOM_150
+        MENUITEM "125%",                        IDM_ZOOM_125
+        MENUITEM "100%",                        IDM_ZOOM_100
+        MENUITEM "50%",                         IDM_ZOOM_50
+        MENUITEM "25%",                         IDM_ZOOM_25
+        MENUITEM "12.5%",                       IDM_ZOOM_12_5
+        MENUITEM "8.33%",                       IDM_ZOOM_8_33
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Visit website",              IDM_VISIT_WEBSITE
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_SUMATRAPDF ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL
+    "W",            IDM_CLOSE,              VIRTKEY, CONTROL
+    "Q",            IDM_EXIT,               VIRTKEY, CONTROL
+    "0",            IDM_ZOOM_FIT_PAGE,      VIRTKEY, CONTROL
+    "1",            IDM_ZOOM_ACTUAL_SIZE,   VIRTKEY, CONTROL
+    "2",            IDM_ZOOM_FIT_WIDTH,     VIRTKEY, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP                  "toolbar.bmp"
+IDB_TOOLBAR_DISABLED    BITMAP                  "toolbar-disabled.bmp"
+IDB_SILK_OPEN           BITMAP                  "icons-silk\\folder.bmp"
+IDB_SILK_NEXT           BITMAP                  "icons-silk\\next.bmp"
+IDB_SILK_PREV           BITMAP                  "icons-silk\\previous.bmp"
+IDB_SILK_ZOOM_IN        BITMAP                  "icons-silk\\zoom_in.bmp"
+IDB_SILK_ZOOM_OUT       BITMAP                  "icons-silk\\zoom_out.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_GOTO_PAGE DIALOGEX 0, 0, 150, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go to page"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Go to page:",IDC_STATIC,8,16,39,8
+    EDITTEXT        IDC_GOTO_PAGE_EDIT,50,14,54,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Go to page",IDOK,7,36,64,14
+    PUSHBUTTON      "Cancel",IDCANCEL,79,36,64,14
+    LTEXT           "(of 99999)",IDC_GOTO_PAGE_LABEL_OF,107,17,36,8
+END
+
+IDD_DIALOG_PDF_ASSOCIATE DIALOGEX 100, 100, 200, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Associate with PDF files?"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Make SumatraPDF default application for PDF files?",IDC_STATIC,8,10,184,8
+    CONTROL         "Don't ask me again",IDC_DONT_ASK_ME_AGAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,24,184,8
+    DEFPUSHBUTTON   "Yes",IDOK,7,40,32,14
+    PUSHBUTTON      "No",IDCANCEL,160,40,32,14
+END
+
+IDD_DIALOG_GET_PASSWORD DIALOGEX 0, 0, 176, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,49,59,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,49,60,14
+    LTEXT           "Enter password for test.pdf",IDC_GET_PASSWORD_LABEL,7,7,162,8
+    LTEXT           "Password:",IDC_STATIC,7,27,34,8
+    EDITTEXT        IDC_GET_PASSWORD_EDIT,48,24,121,14,ES_AUTOHSCROLL
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_GOTO_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_DIALOG_GET_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSORDRAG          CURSOR                  "dragcursor.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_SUMATRAPDF          "SUMATRAPDFWIN"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "SumatraPDF"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

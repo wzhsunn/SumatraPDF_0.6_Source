@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>fitzheadib</ProjectName>
+    <ProjectGuid>{189EAA5B-0930-4B6D-AA7E-B57B22EABA06}</ProjectGuid>
+    <RootNamespace>sumatrapdf</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)-fitzhead\</OutDir>
+    <IntDir>$(Configuration)-fitzhead\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)-fitzhead\</OutDir>
+    <IntDir>$(Configuration)-fitzhead\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)fitz-head\include;$(ProjectDir)ext\jpeg;$(ProjectDir)ext\zlib;$(ProjectDir)ext\freetype231\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;WIN32;_WINDOWS;_DEBUG;DEBUG;NEED_MATH=1;NEED_STRLCPY=1;NEED_STRSEP=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName)_d.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4996;4244;4267;4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+      <UseFullPaths>true</UseFullPaths>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_d.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)fitz-head\include;$(ProjectDir)ext\jpeg;$(ProjectDir)ext\zlib;$(ProjectDir)ext\freetype231\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;_WINDOWS;NEED_MATH=1;NEED_STRLCPY=1;NEED_STRSEP=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4996;4244;4267;4995;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <EnablePREfast>false</EnablePREfast>
+      <UseFullPaths>true</UseFullPaths>
+    </ClCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="fitz-head\base\base_cleanname.c" />
+    <ClCompile Include="fitz-head\base\base_cpudep.c" />
+    <ClCompile Include="fitz-head\base\base_error.c" />
+    <ClCompile Include="fitz-head\base\base_hash.c" />
+    <ClCompile Include="fitz-head\base\base_matrix.c" />
+    <ClCompile Include="fitz-head\base\base_memory.c" />
+    <ClCompile Include="fitz-head\base\base_rect.c" />
+    <ClCompile Include="fitz-head\base\base_rune.c" />
+    <ClCompile Include="fitz-head\stream\crypt_arc4.c" />
+    <ClCompile Include="fitz-head\stream\crypt_crc32.c" />
+    <ClCompile Include="fitz-head\stream\crypt_md5.c" />
+    <ClCompile Include="fitz-head\draw\draw_fill.c" />
+    <ClCompile Include="fitz-head\draw\draw_font.c" />
+    <ClCompile Include="fitz-head\draw\draw_imageunpack.c" />
+    <ClCompile Include="fitz-head\draw\draw_main.c" />
+    <ClCompile Include="fitz-head\draw\draw_node.c" />
+    <ClCompile Include="fitz-head\draw\draw_pixmap.c" />
+    <ClCompile Include="fitz-head\draw\draw_prim.c" />
+    <ClCompile Include="fitz-head\draw\draw_scan.c" />
+    <ClCompile Include="fitz-head\draw\draw_stroke.c" />
+    <ClCompile Include="fitz-head\stream\filt_a85d.c" />
+    <ClCompile Include="fitz-head\stream\filt_a85e.c" />
+    <ClCompile Include="fitz-head\stream\filt_ahxd.c" />
+    <ClCompile Include="fitz-head\stream\filt_ahxe.c" />
+    <ClCompile Include="fitz-head\stream\filt_arc4.c" />
+    <ClCompile Include="fitz-head\stream\filt_dctd.c" />
+    <ClCompile Include="fitz-head\stream\filt_dcte.c" />
+    <ClCompile Include="fitz-head\stream\filt_faxd.c" />
+    <ClCompile Include="fitz-head\stream\filt_faxdtab.c" />
+    <ClCompile Include="fitz-head\stream\filt_faxe.c" />
+    <ClCompile Include="fitz-head\stream\filt_faxetab.c" />
+    <ClCompile Include="fitz-head\stream\filt_flate.c" />
+    <ClCompile Include="fitz-head\stream\filt_lzwd.c" />
+    <ClCompile Include="fitz-head\stream\filt_lzwe.c" />
+    <ClCompile Include="fitz-head\stream\filt_null.c" />
+    <ClCompile Include="fitz-head\stream\filt_pipeline.c" />
+    <ClCompile Include="fitz-head\stream\filt_predict.c" />
+    <ClCompile Include="fitz-head\stream\filt_rld.c" />
+    <ClCompile Include="fitz-head\stream\filt_rle.c" />
+    <ClCompile Include="fitz-head\world\node_misc1.c" />
+    <ClCompile Include="fitz-head\world\node_misc2.c" />
+    <ClCompile Include="fitz-head\world\node_optimize.c" />
+    <ClCompile Include="fitz-head\world\node_path.c" />
+    <ClCompile Include="fitz-head\world\node_text.c" />
+    <ClCompile Include="fitz-head\world\node_tree.c" />
+    <ClCompile Include="fitz-head\stream\obj_array.c" />
+    <ClCompile Include="fitz-head\stream\obj_dict.c" />
+    <ClCompile Include="fitz-head\stream\obj_parse.c" />
+    <ClCompile Include="fitz-head\stream\obj_print.c" />
+    <ClCompile Include="fitz-head\stream\obj_simple.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_annot.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_build.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_cmap.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_colorspace1.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_colorspace2.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_crypt.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_debug.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_doctor.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_font.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_fontagl.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_fontenc.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_fontfile.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_fterror.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_function.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_image.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_interpret.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_lex.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_nametree.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_open.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_outline.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_page.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_pagetree.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_parse.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_pattern.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_repair.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_resources.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_save.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_shade.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_shade1.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_shade4.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_store.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_stream.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_type3.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_unicode.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_xobject.c" />
+    <ClCompile Include="fitz-head\mupdf\pdf_xref.c" />
+    <ClCompile Include="fitz-head\world\res_colorspace.c" />
+    <ClCompile Include="fitz-head\world\res_font.c" />
+    <ClCompile Include="fitz-head\world\res_image.c" />
+    <ClCompile Include="fitz-head\world\res_shade.c" />
+    <ClCompile Include="fitz-head\stream\stm_buffer.c" />
+    <ClCompile Include="fitz-head\stream\stm_filter.c" />
+    <ClCompile Include="fitz-head\stream\stm_misc.c" />
+    <ClCompile Include="fitz-head\stream\stm_open.c" />
+    <ClCompile Include="fitz-head\stream\stm_read.c" />
+    <ClCompile Include="fitz-head\stream\stm_write.c" />
+    <ClCompile Include="fitz-head\base\util_getopt.c" />
+    <ClCompile Include="fitz-head\base\util_strlcat.c" />
+    <ClCompile Include="fitz-head\base\util_strlcpy.c" />
+    <ClCompile Include="fitz-head\base\util_strsep.c" />
+    <ClCompile Include="fitz\fonts\Dingbats.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusMonL-Bold.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusMonL-BoldObli.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusMonL-Regu.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusMonL-ReguObli.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-Medi.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-MediItal.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-Regu.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-ReguItal.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusSanL-Bold.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusSanL-BoldItal.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusSanL-Regu.cff.c" />
+    <ClCompile Include="fitz\fonts\NimbusSanL-ReguItal.cff.c" />
+    <ClCompile Include="fitz\fonts\StandardSymL.cff.c" />
+    <ClCompile Include="fitz\fonts\URWChanceryL-MediItal.cff.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fitz-head\stream\filt_dctc.h" />
+    <ClInclude Include="fitz-head\stream\filt_faxc.h" />
+    <ClInclude Include="fitz-head\stream\filt_faxd.h" />
+    <ClInclude Include="fitz-head\stream\filt_faxe.h" />
+    <ClInclude Include="fitz-head\include\mupdf\annot.h" />
+    <ClInclude Include="fitz-head\include\mupdf\base14.h" />
+    <ClInclude Include="fitz-head\include\fitz\base_cpudep.h" />
+    <ClInclude Include="fitz-head\include\fitz\base_geom.h" />
+    <ClInclude Include="fitz-head\include\fitz\base_hash.h" />
+    <ClInclude Include="fitz-head\include\fitz\base_math.h" />
+    <ClInclude Include="fitz-head\include\fitz\base_pixmap.h" />
+    <ClInclude Include="fitz-head\include\fitz\base_runtime.h" />
+    <ClInclude Include="fitz-head\include\fitz\base_sysdep.h" />
+    <ClInclude Include="fitz-head\include\mupdf\content.h" />
+    <ClInclude Include="fitz-head\include\fitz\draw_misc.h" />
+    <ClInclude Include="fitz-head\include\fitz\draw_path.h" />
+    <ClInclude Include="fitz-head\include\fitz-base.h" />
+    <ClInclude Include="fitz-head\include\fitz-draw.h" />
+    <ClInclude Include="fitz-head\include\fitz-stream.h" />
+    <ClInclude Include="fitz-head\include\fitz-world.h" />
+    <ClInclude Include="fitz-head\include\fitz.h" />
+    <ClInclude Include="fitz-head\include\mupdf.h" />
+    <ClInclude Include="fitz-head\include\mupdf\page.h" />
+    <ClInclude Include="fitz-head\include\pdfapp.h" />
+    <ClInclude Include="fitz-head\include\mupdf\rsrc.h" />
+    <ClInclude Include="fitz-head\include\samus.h" />
+    <ClInclude Include="fitz-head\include\fitz\stm_buffer.h" />
+    <ClInclude Include="fitz-head\include\fitz\stm_crypt.h" />
+    <ClInclude Include="fitz-head\include\fitz\stm_filter.h" />
+    <ClInclude Include="fitz-head\include\fitz\stm_object.h" />
+    <ClInclude Include="fitz-head\include\fitz\stm_stream.h" />
+    <ClInclude Include="fitz-head\include\mupdf\syntax.h" />
+    <ClInclude Include="fitz-head\include\fitz\wld_color.h" />
+    <ClInclude Include="fitz-head\include\fitz\wld_font.h" />
+    <ClInclude Include="fitz-head\include\fitz\wld_image.h" />
+    <ClInclude Include="fitz-head\include\fitz\wld_path.h" />
+    <ClInclude Include="fitz-head\include\fitz\wld_shade.h" />
+    <ClInclude Include="fitz-head\include\fitz\wld_text.h" />
+    <ClInclude Include="fitz-head\include\fitz\wld_tree.h" />
+    <ClInclude Include="fitz-head\include\mupdf\xref.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

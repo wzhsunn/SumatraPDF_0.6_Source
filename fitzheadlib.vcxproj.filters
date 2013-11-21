@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fonts">
+      <UniqueIdentifier>{a34195bb-76b6-4ae0-bc3f-4cd4b46b31a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fitz-head\base\base_cleanname.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\base_cpudep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\base_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\base_hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\base_matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\base_memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\base_rect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\base_rune.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\crypt_arc4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\crypt_crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\crypt_md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_fill.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_imageunpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_node.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_pixmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_prim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_scan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\draw\draw_stroke.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_a85d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_a85e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_ahxd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_ahxe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_arc4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_dctd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_dcte.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_faxd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_faxdtab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_faxe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_faxetab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_flate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_lzwd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_lzwe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_null.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_pipeline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_predict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_rld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\filt_rle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\node_misc1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\node_misc2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\node_optimize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\node_path.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\node_text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\node_tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\obj_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\obj_dict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\obj_parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\obj_print.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\obj_simple.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_annot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_build.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_cmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_colorspace1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_colorspace2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_crypt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_doctor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_fontagl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_fontenc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_fontfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_fterror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_function.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_interpret.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_lex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_nametree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_outline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_page.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_pagetree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_pattern.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_repair.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_resources.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_save.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_shade.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_shade1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_shade4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_store.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_type3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_unicode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_xobject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\mupdf\pdf_xref.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\res_colorspace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\res_font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\res_image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\world\res_shade.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\stm_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\stm_filter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\stm_misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\stm_open.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\stm_read.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\stream\stm_write.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\util_getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\util_strlcat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\util_strlcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz-head\base\util_strsep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\Dingbats.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusMonL-Bold.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusMonL-BoldObli.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusMonL-Regu.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusMonL-ReguObli.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-Medi.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-MediItal.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-Regu.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusRomNo9L-ReguItal.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusSanL-Bold.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusSanL-BoldItal.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusSanL-Regu.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\NimbusSanL-ReguItal.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\StandardSymL.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="fitz\fonts\URWChanceryL-MediItal.cff.c">
+      <Filter>Fonts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fitz-head\stream\filt_dctc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\stream\filt_faxc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\stream\filt_faxd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\stream\filt_faxe.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf\annot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf\base14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\base_cpudep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\base_geom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\base_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\base_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\base_pixmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\base_runtime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\base_sysdep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf\content.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\draw_misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\draw_path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz-base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz-draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz-stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz-world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf\page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\pdfapp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf\rsrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\samus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\stm_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\stm_crypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\stm_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\stm_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\stm_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf\syntax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\wld_color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\wld_font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\wld_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\wld_path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\wld_shade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\wld_text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\fitz\wld_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fitz-head\include\mupdf\xref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
